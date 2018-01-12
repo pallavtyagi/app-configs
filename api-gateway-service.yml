@@ -3,7 +3,7 @@ server:
 
 zuul:
   routes:
-    trade-service:
+    trade:
         path: /trade
         serviceId: trade-service
         stripPrefix: true
