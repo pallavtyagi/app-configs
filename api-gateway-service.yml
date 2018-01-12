@@ -6,3 +6,4 @@ zuul:
     trade-service:
         path: /trade
         serviceId: trade-service
+        stripPrefix: true
