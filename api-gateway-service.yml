@@ -1,2 +1,7 @@
 server:
   port: 9000
+
+zuul:
+  routes:
+    trade-service:
+        serviceId: trade-service
