@@ -4,4 +4,5 @@ server:
 zuul:
   routes:
     trade-service:
+        path: /trade
         serviceId: trade-service
