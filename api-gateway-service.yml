@@ -2,8 +2,13 @@ server:
   port: 9000
 
 zuul:
+  ignoredServices: '*'
+    host:
+      connect-timeout-millis: 20000
+      socket-timeout-millis: 20000
   routes:
-    trade:
+    stripPrefix: false
+    trade-service:
         path: /trade
         serviceId: trade-service
-        stripPrefix: true
+        stripPrefix: false
