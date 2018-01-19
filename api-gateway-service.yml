@@ -7,8 +7,11 @@ zuul:
     connect-timeout-millis: 20000
     socket-timeout-millis: 20000
   routes:
-    stripPrefix: false
     trade-service:
-        path: /trade
-        serviceId: trade-service
-        stripPrefix: false
+      path: /trade
+      serviceId: trade-service
+      stripPrefix: false
+    reference-data-service:
+      path: /reference
+      serviceId: reference-data-service
+      stripPrefix: false
