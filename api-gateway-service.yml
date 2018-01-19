@@ -5,10 +5,10 @@ zuul:
   ignoredServices: '*'
   routes:
     trade-service:
-      path: /trade
+      path: /trade/**
       serviceId: trade-service
       stripPrefix: false
     reference-data-service:
-      path: /reference
+      path: /refdata/**
       serviceId: reference-data-service
       stripPrefix: false
