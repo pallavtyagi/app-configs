@@ -3,9 +3,9 @@ server:
 
 zuul:
   ignoredServices: '*'
-    host:
-      connect-timeout-millis: 20000
-      socket-timeout-millis: 20000
+  host:
+    connect-timeout-millis: 20000
+    socket-timeout-millis: 20000
   routes:
     stripPrefix: false
     trade-service:
